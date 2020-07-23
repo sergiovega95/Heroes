@@ -14,6 +14,8 @@ import { FooterComponent } from './Componentes/Shared/footer/footer.component';
 import { HeroesComponent } from './Componentes/heroes/heroes.component';
 import { AboutComponent } from './Componentes/about/about.component';
 import { HeroeComponent } from './Componentes/heroe/heroe.component';
+import { BuscadorHeroesComponent } from './Componentes/buscador-heroes/buscador-heroes.component';
+import { HeroeTarjetaComponent } from './Componentes/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { HeroeComponent } from './Componentes/heroe/heroe.component';
     FooterComponent,
     HeroesComponent,
     AboutComponent,
-    HeroeComponent,
+    HeroeComponent, 
+    BuscadorHeroesComponent, HeroeTarjetaComponent,
     
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { HeroeDto } from '../../Interfaces/IHeroes';
 import {HeroeService} from '../../Servicios/Heroes/heroe.service';
 import {Router} from "@angular/router"
@@ -9,8 +9,8 @@ import {Router} from "@angular/router"
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-
-  heroes :HeroeDto[];
+  
+  heroes :HeroeDto[]; 
   
   constructor(private heroeService: HeroeService, private router: Router) 
   {
@@ -22,16 +22,6 @@ export class HeroesComponent implements OnInit {
    
   }
 
-  BuscarHeroes(busqueda :string){
-
-   let allHeroes = this.heroeService.GetHeroes();
-   this.heroes=this.heroes.filter(heroe => heroe.nombre.includes(busqueda));
-   
-  }
-
-  VerHeroe(indice:string)
-  {
-    this.router.navigate(['/heroe', indice])
-  }
+  
 
 }

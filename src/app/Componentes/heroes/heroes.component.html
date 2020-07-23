@@ -2,17 +2,8 @@
 <hr>
 
 <div class="card-columns">
-    <div *ngFor="let heroe of heroes;let indice=index">
-        <div class="card">
-            <img class="card-img-top" src={{heroe.img}} alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">{{heroe.nombre}}</h5>
-              <p class="card-text">{{heroe.bio}}</p>
-              <button (click)="VerHeroe(indice)" type="button" class="btn btn-success btn-block">
-                 Ver más
-              </button>
-            </div>
-          </div>
-    </div>    
+
+<app-heroe-tarjeta [heroe]=heroe *ngFor="let heroe of heroes;let indice=index"></app-heroe-tarjeta>    
+   
 </div>
   

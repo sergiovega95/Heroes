@@ -1,0 +1,18 @@
+
+<h1>Resultados encontrados para <small>'{{busqueda}}'</small> </h1> 
+<hr>
+
+<div *ngIf="heroes.length==0" class="alert alert-danger" role="alert">
+    No se encontraron resultados para '{{busqueda}}' ..
+</div>
+
+<div *ngIf="heroes.length>0">
+
+    <div class="card-columns">
+
+        <app-heroe-tarjeta [heroe]=heroe *ngFor="let heroe of heroes;let indice=index"></app-heroe-tarjeta>    
+           
+    </div>
+
+</div>
+

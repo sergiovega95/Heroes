@@ -1,17 +1,24 @@
 
 <div class="row"> 
-    <h1>{{heroe.nombre}}</h1>
-    <div class="card">
+    <h1>{{heroe.nombre}} ({{ heroe.aparicion | date:'yyyy' }})</h1>
+    <div style="padding-bottom: 20px;" class="card">
         <div class="row">
-            <div class="col-6">
-                <img height="400px" src="{{heroe.img}}" class="card-img-top" alt="...">
+            <div class="col-md-4">
+                <img  src="{{heroe.img}}" class="card-img-top" alt="..."> 
+                <div style="text-align: center;" class="col-12">
+                    <button  style="margin-top: 10px;" [routerLink]="['/heroes']" routerLinkActive="router-link-active"  type="button" class="btn btn-primary btn-block">Volver</button>
+                </div>               
             </div>
-            <div class="col-6">
+            
+            <div class="col-md-6">
                 <div class="card-body">                     
                     {{heroe.nombre}}                     
                     <p class="card-text">{{heroe.bio}}</p>
-                    <p>Primera aparición : {{heroe.aparicion}}</p>     
-                  </div>
+                    <p>
+
+                    </p>
+                    <p>Primera aparición : {{heroe.aparicion}}</p>                                         
+                </div>
             </div>
         </div>      
         

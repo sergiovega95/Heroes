@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HeroeDto } from 'src/app/Interfaces/IHeroes';
+import { HeroeService } from 'src/app/Servicios/Heroes/heroe.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  busqueda:string;
+  heroes :HeroeDto[];
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  BusquedaHeroes(event){
-    
-    let busqueda = event.srcElement.value;    
+  BusquedaHeroes(parametro:string)
+  {   
+      
+    this.router.navigate(['/buscar',parametro]); 
     
   }
 }

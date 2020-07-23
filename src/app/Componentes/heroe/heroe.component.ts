@@ -19,11 +19,10 @@ export class HeroeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.route.params.subscribe(params => {
-      console.log(params);
+    this.route.params.subscribe(params => {      
       let IdHeroe:number= params['id'];    
        this.heroe = this.heroeService.GetHeroeById(IdHeroe) ;     
-      console.log(this.heroe);
+      
     });
   }
 
