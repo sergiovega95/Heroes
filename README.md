@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Overview
 
-<img align="center" src="https://raw.githubusercontent.com/sergiovega95/Heroes/master/src/assets/images/Capture1.PNG">
+<img align="center" src="https://raw.githubusercontent.com/sergiovega95/Heroes/master/src/assets/Images/Capture1.PNG">
